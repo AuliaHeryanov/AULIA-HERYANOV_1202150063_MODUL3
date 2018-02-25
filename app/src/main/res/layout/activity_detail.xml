@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.auliaheryanov.auliaheryanov_1202150063_modul3.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logoDetail"
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/amidis" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:textSize="30dp"
+                android:text="Amidis"/>
+
+            <TextView
+                android:id="@+id/descDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/lipsum"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="245dp">
+
+                <ImageView
+                    android:id="@+id/indicatorBottle"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/indicator" />
+
+                <Button
+                    android:id="@+id/buttonAdd"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/indicatorBottle"
+                    android:layout_toStartOf="@+id/indicatorBottle"
+                    android:background="@drawable/add"/>
+                    <!--android:onClick="onClickAdd"-->
+
+
+                <Button
+                    android:id="@+id/buttonRemove"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/indicatorBottle"
+                    android:layout_toRightOf="@+id/indicatorBottle"
+                    android:background="@drawable/remove"/>
+                    <!--android:onClick="onClickRemove"-->
+
+
+                <TextView
+                    android:id="@+id/indicatorNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/indicatorBottle"
+                    android:layout_centerHorizontal="true"
+                    android:text="1L"
+                    android:textSize="30dp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>
